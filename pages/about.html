@@ -1,0 +1,1565 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - VK Services Pvt Ltd</title>
+    <meta name="description" content="Learn about VK Services Pvt Ltd - your trusted partner for property legal & tax solutions in India. Meet our team of experts and discover our journey.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/styles.css"> -->
+    
+    <!-- Web Manifest -->
+    <link rel="manifest" href="../site.webmanifest">
+
+    <style>
+        /* VK Services Pvt Ltd - About Page Responsive CSS */
+
+/* Reset and Base Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: #fafbfc;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #2156a5;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+    color: #163a6c;
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #fff;
+    border-bottom: 1px solid #e9ecef;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2156a5;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    font-size: 2rem;
+    color: #2156a5;
+}
+
+nav {
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-links li a {
+    font-size: 1rem;
+    color: #222;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    background: #2156a5;
+    color: #fff;
+}
+
+.cta-button {
+    background: #2156a5;
+    color: #fff;
+    padding: 0.6rem 1.4rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-left: 2rem;
+    transition: background 0.2s;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cta-button:hover,
+.secondary-button:hover {
+    background: #163a6c;
+}
+
+.secondary-button {
+    background: #fff;
+    color: #2156a5;
+    border: 2px solid #2156a5;
+    padding: 0.6rem 1.4rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-right: 1rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #2156a5;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(33, 86, 165, 0.97);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    z-index: 999;
+    transition: opacity 0.3s;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 1.2rem;
+}
+
+.mobile-menu ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.mobile-menu .cta-button {
+    margin-top: 2rem;
+    background: #fff;
+    color: #2156a5;
+}
+
+.close-menu {
+    position: absolute;
+    top: 1.5rem; right: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Banner */
+.page-banner {
+    position: relative;
+    background: url('../assets/images/about-banner.jpg') center/cover no-repeat;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(33, 86, 165, 0.65);
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.breadcrumbs {
+    color: #e3e3e3;
+    font-size: 1rem;
+}
+
+.breadcrumbs a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: #2156a5;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Our Story */
+.our-story .story-content {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.story-image {
+    flex: 1 1 320px;
+    max-width: 340px;
+    position: relative;
+}
+
+.story-image img {
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(33,86,165,0.08);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    background: #2156a5;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.story-text {
+    flex: 2 1 400px;
+}
+
+.story-text h3 {
+    font-size: 1.3rem;
+    color: #163a6c;
+    margin-bottom: 0.7rem;
+}
+
+.story-text p {
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.milestone-counter {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.counter-item {
+    background: #f4f7fb;
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+    min-width: 120px;
+    flex: 1 1 120px;
+    box-shadow: 0 2px 12px rgba(33,86,165,0.04);
+}
+
+.counter {
+    font-size: 2rem;
+    color: #2156a5;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.counter-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Our Mission */
+.our-mission {
+    background: #f7fafd;
+    padding: 3rem 0;
+}
+
+.mission-content {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mission-text {
+    flex: 1 1 320px;
+}
+
+.section-subtitle {
+    color: #2156a5;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.mission-text h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
+    color: #163a6c;
+}
+
+.mission-text p {
+    color: #444;
+    margin-bottom: 1.2rem;
+}
+
+.mission-values {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.value-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.2rem 1rem;
+    flex: 1 1 180px;
+    min-width: 180px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    box-shadow: 0 2px 12px rgba(33,86,165,0.04);
+    opacity: 0.8;
+    transition: box-shadow 0.2s, opacity 0.2s;
+}
+
+.value-item.animated {
+    opacity: 1;
+    box-shadow: 0 4px 24px rgba(33,86,165,0.08);
+}
+
+.value-icon {
+    font-size: 2rem;
+    color: #2156a5;
+    flex-shrink: 0;
+}
+
+.value-text h4 {
+    margin-bottom: 0.3rem;
+    color: #163a6c;
+    font-size: 1.1rem;
+}
+
+.value-text p {
+    font-size: 0.98rem;
+    color: #555;
+}
+
+.mission-visual {
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission-image img {
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 4px 24px rgba(33,86,165,0.08);
+}
+
+.mission-quote {
+    background: #2156a5;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    box-shadow: 0 2px 12px rgba(33,86,165,0.08);
+    margin-top: 1rem;
+}
+
+.mission-quote i {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+    color: #fff;
+}
+
+.mission-quote h4 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #f3c623;
+}
+
+.mission-quote span {
+    font-size: 0.97rem;
+    color: #dbe9fa;
+}
+
+/* Our Team */
+.our-team {
+    padding: 3rem 0 2rem 0;
+    background: #fff;
+}
+
+.team-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-card {
+    background: #f7fafd;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(33,86,165,0.06);
+    width: 260px;
+    padding: 1.3rem 1rem 1.5rem 1rem;
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.team-card:hover {
+    box-shadow: 0 8px 32px rgba(33,86,165,0.12);
+    z-index: 2;
+}
+
+.team-image {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(33,86,165,0.08);
+    background: #fff;
+}
+
+.img-hover-zoom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.team-card:hover .img-hover-zoom img {
+    transform: scale(1.07);
+}
+
+.team-social {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    display: flex;
+    gap: 0.7rem;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    background: rgba(33,86,165,0.92);
+    border-radius: 20px;
+    padding: 0.2rem 0.8rem;
+}
+
+.team-social a {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.team-social a:hover {
+    color: #f3c623;
+}
+
+.team-info h3 {
+    color: #2156a5;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.team-info span {
+    font-size: 0.98rem;
+    color: #163a6c;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.team-info p {
+    font-size: 0.96rem;
+    color: #555;
+}
+
+.team-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.team-cta h3 {
+    color: #2156a5;
+    margin-bottom: 0.5rem;
+}
+
+.team-cta p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.about-testimonials {
+    background: #f7fafd;
+    padding: 3rem 0 2rem 0;
+}
+
+.testimonial-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(33,86,165,0.06);
+    width: 320px;
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s;
+    text-align: left;
+}
+
+.testimonial-quote {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    font-size: 2.2rem;
+    color: #f3c623;
+    font-family: serif;
+    opacity: 0.18;
+    pointer-events: none;
+}
+
+.testimonial-content {
+    margin-bottom: 1.2rem;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #2156a5;
+}
+
+.author-info h4 {
+    color: #2156a5;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.author-info span {
+    font-size: 0.97rem;
+    color: #163a6c;
+}
+
+.rating {
+    color: #f3c623;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+}
+
+.testimonial-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+/* Partners */
+.our-partners {
+    background: #fff;
+    padding: 3rem 0 2rem 0;
+}
+
+.partners-slider {
+    display: flex;
+    gap: 2.5rem;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+    min-height: 90px;
+}
+
+.partner-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    max-width: 160px;
+    padding: 0.5rem 1rem;
+    background: #f7fafd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(33,86,165,0.04);
+    text-align: center;
+}
+
+.partner-logo img {
+    max-height: 48px;
+    margin-bottom: 0.4rem;
+}
+
+.partner-name {
+    color: #2156a5;
+    font-size: 0.97rem;
+    font-weight: 500;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(90deg, #2156a5 60%, #163a6c 100%);
+    color: #fff;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+    letter-spacing: 1px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+.footer {
+    background: #163a6c;
+    color: #fff;
+    padding: 2.5rem 0 1.2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    flex: 1 1 220px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo .logo {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo p {
+    color: #dbe9fa;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a {
+    color: #f3c623;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2.5rem;
+    flex: 2 1 420px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer-links-column {
+    min-width: 140px;
+    margin-bottom: 1rem;
+}
+
+.footer-links-column h3 {
+    color: #f3c623;
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
+}
+
+.footer-links-column ul {
+    list-style: none;
+}
+
+.footer-links-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links-column ul li a {
+    color: #dbe9fa;
+    font-size: 0.97rem;
+    transition: color 0.2s;
+}
+
+.footer-links-column ul li a:hover {
+    color: #f3c623;
+}
+
+.footer-bottom {
+    border-top: 1px solid #294e7c;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.97rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-bottom-links a {
+    color: #f3c623;
+    transition: color 0.2s;
+}
+
+.footer-bottom-links a:hover {
+    color: #fff;
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #2156a5;
+    color: #fff;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    box-shadow: 0 2px 12px rgba(33,86,165,0.12);
+    opacity: 0.85;
+    z-index: 999;
+    transition: background 0.2s, opacity 0.2s;
+}
+
+.back-to-top:hover {
+    background: #163a6c;
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+        width: 96%;
+    }
+    .header-container,
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .nav-links {
+        gap: 1.2rem;
+    }
+    .footer-links {
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .our-story .story-content,
+    .mission-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .story-image, .mission-visual {
+        margin: 0 auto 1.5rem auto;
+    }
+    .milestone-counter {
+        gap: 1rem;
+    }
+    .team-grid,
+    .testimonial-grid {
+        gap: 1rem;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-links,
+    .cta-button {
+        display: none;
+    }
+    .mobile-menu-toggle {
+        display: block;
+    }
+    .mobile-menu {
+        display: flex;
+    }
+    .team-grid,
+    .testimonial-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-card,
+    .testimonial-card {
+        width: 95%;
+        max-width: 340px;
+    }
+    .partners-slider {
+        gap: 1.2rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .page-banner {
+        min-height: 200px;
+    }
+    .banner-content h1 {
+        font-size: 1.5rem;
+    }
+    .banner-content p {
+        font-size: 1rem;
+    }
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+    .mission-quote {
+        padding: 1rem;
+        font-size: 0.98rem;
+    }
+    .milestone-counter {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+    .counter-item {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 15px;
+    }
+    .container {
+        width: 99%;
+        padding: 0 0.5rem;
+    }
+    .footer-logo,
+    .footer-links-column {
+        min-width: unset;
+    }
+    .team-card,
+    .testimonial-card {
+        padding: 1rem 0.5rem;
+    }
+    .partner-logo {
+        min-width: 90px;
+        max-width: 110px;
+        padding: 0.3rem 0.5rem;
+    }
+    .partner-logo img {
+        max-height: 32px;
+    }
+    .mission-image img {
+        margin-bottom: 0.7rem;
+    }
+    .banner-content h1 {
+        font-size: 1.1rem;
+    }
+    .banner-content p,
+    .section-header p,
+    .cta-content p {
+        font-size: 0.97rem;
+    }
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .back-to-top {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+/* Utility Classes */
+.bg-light {
+    background: #f7fafd !important;
+}
+
+.text-reveal {
+    animation: textReveal 1.2s cubic-bezier(0.77, 0, 0.175, 1) both;
+}
+
+@keyframes textReveal {
+    0% {
+        letter-spacing: 0.5em;
+        filter: blur(8px);
+        opacity: 0;
+    }
+    100% {
+        letter-spacing: normal;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+/* Hide mobile menu by default */
+.mobile-menu {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+.mobile-menu.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Show nav and CTA on desktop */
+@media (min-width: 701px) {
+    .nav-links,
+    .cta-button {
+        display: flex !important;
+    }
+    .mobile-menu-toggle,
+    .mobile-menu {
+        display: none !important;
+    }
+}
+
+/* Partners slider animation (for JS) */
+.partners-slider {
+    transition: transform 0.3s linear;
+    will-change: transform;
+}
+
+/* Fix for testimonial and team card 3D effect on mobile */
+@media (hover: none) and (pointer: coarse) {
+    .team-card,
+    .testimonial-card {
+        transform: none !important;
+        box-shadow: 0 2px 16px rgba(33,86,165,0.06);
+    }
+}
+
+/* Miscellaneous */
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f7fafd;
+}
+::-webkit-scrollbar-thumb {
+    background: #2156a5;
+    border-radius: 4px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-building logo-icon"></i>
+                <span>VK Services</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <a href="contact.html" class="cta-button">Book Consultation</a>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="mobile-menu">
+                <div class="close-menu">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="cta-button">Book Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner parallax">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <div class="banner-content" data-aos="fade-up">
+                <h1 class="text-reveal">About VK Services</h1>
+                <p>Get to know the team behind your trusted property legal & tax solutions</p>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>About Us</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Story</h2>
+                <p>How we evolved into the trusted name in property legal & tax solutions</p>
+            </div>
+            
+            <div class="story-content">
+                <div class="story-image float" data-aos="fade-right">
+                    <img src="../assets/images/about-story.jpg" alt="VK Services Story">
+                    <div class="image-caption">Founded in 2015</div>
+                </div>
+                
+                <div class="story-text" data-aos="fade-left">
+                    <h3>From Humble Beginnings to Industry Leadership</h3>
+                    <p>VK Services was founded in 2015 by Vinod Kumar, a chartered accountant with over 15 years of experience in property taxation. What began as a small consultancy providing tax advice to property owners quickly evolved as Vinod identified a significant gap in the market – there was no single service provider offering comprehensive legal and tax solutions for property transactions.</p>
+                    
+                    <p>Recognizing the challenges faced by both resident Indians and NRIs in navigating the complex property landscape in India, Vinod expanded the team to include legal experts, property consultants, and documentation specialists. This multidisciplinary approach allowed VK Services to offer end-to-end solutions under one roof.</p>
+                    
+                    <p>The company witnessed rapid growth between 2018-2020 as word-of-mouth referrals from satisfied clients helped establish our reputation for professionalism, transparency, and expertise. Our focus on NRI clients particularly resonated in the market, as we helped hundreds of non-resident Indians manage their property assets in India remotely.</p>
+                    
+                    <p>Today, VK Services Pvt Ltd has grown into a team of 25+ professionals serving clients across India and from over 15 countries worldwide. While we've expanded significantly, our core values remain unchanged – providing hassle-free, transparent, and expert property solutions that truly serve our clients' best interests.</p>
+                    
+                    <div class="milestone-counter" data-aos="fade-up">
+                        <div class="counter-item">
+                            <div class="counter" data-target="1500">0</div>
+                            <p>Clients Served</p>
+                        </div>
+                        
+                        <div class="counter-item">
+                            <div class="counter" data-target="3000">0</div>
+                            <p>Projects Completed</p>
+                        </div>
+                        
+                        <div class="counter-item">
+                            <div class="counter" data-target="15">0</div>
+                            <p>Countries Served</p>
+                        </div>
+                        
+                        <div class="counter-item">
+                            <div class="counter" data-target="25">0</div>
+                            <p>Team Members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="our-mission bg-light">
+        <div class="container">
+            <div class="mission-content">
+                <div class="mission-text" data-aos="fade-right">
+                    <div class="section-subtitle">Our Mission</div>
+                    <h2>What Drives Us Forward</h2>
+                    <p>At VK Services, our mission is to simplify the complex world of property transactions by providing trustworthy, transparent, and comprehensive legal and tax solutions that protect our clients' interests and give them peace of mind.</p>
+                    
+                    <div class="mission-values">
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="value-text">
+                                <h4>Trust & Integrity</h4>
+                                <p>We build lasting relationships based on honesty, transparency and ethical practices in everything we do.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-award"></i></div>
+                            <div class="value-text">
+                                <h4>Excellence & Expertise</h4>
+                                <p>We are committed to delivering the highest standards of professional service through continuous learning and improvement.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-user-shield"></i></div>
+                            <div class="value-text">
+                                <h4>Client-Centric Approach</h4>
+                                <p>We place our clients' needs at the center of everything we do, providing customized solutions that truly serve their best interests.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mission-visual" data-aos="fade-left">
+                    <div class="mission-image">
+                        <img src="../assets/images/about-mission.jpg" alt="Our Mission">
+                    </div>
+                    <div class="mission-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Our goal is to be the bridge that connects property owners with peace of mind, turning complex legal and tax challenges into simple, manageable solutions.</p>
+                        <h4>Vinod Kumar</h4>
+                        <span>Founder & CEO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="our-team">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Meet Our Expert Team</h2>
+                <p>The professionals behind VK Services' success</p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-image img-hover-zoom">
+                        <img src="../assets/images/team1.jpg" alt="Vinod Kumar">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="far fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Vinod Kumar</h3>
+                        <span>Founder & CEO</span>
+                        <p>Chartered Accountant with 20+ years of experience in property taxation and financial advisory.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-image img-hover-zoom">
+                        <img src="../assets/images/team2.jpg" alt="Priya Sharma">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="far fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Priya Sharma</h3>
+                        <span>Head of Legal Services</span>
+                        <p>Property law specialist with expertise in dispute resolution and documentation compliance.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-image img-hover-zoom">
+                        <img src="../assets/images/team3.jpg" alt="Rajesh Mehta">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="far fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Rajesh Mehta</h3>
+                        <span>Tax Advisory Director</span>
+                        <p>Chartered Accountant specializing in capital gains optimization and international taxation.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-image img-hover-zoom">
+                        <img src="../assets/images/team4.jpg" alt="Sunita Patel">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="far fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Sunita Patel</h3>
+                        <span>NRI Services Head</span>
+                        <p>Specialist in FEMA regulations and international property transactions for non-resident Indians.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-cta" data-aos="fade-up">
+                <h3>Join Our Growing Team</h3>
+                <p>We're always looking for talented professionals who share our passion for delivering excellence.</p>
+                <a href="#" class="cta-button">View Career Opportunities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="about-testimonials bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from those who have experienced our services firsthand</p>
+            </div>
+            
+            <div class="testimonial-grid" data-aos="fade-up">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-content">
+                        <p>As an NRI living in the US for 15 years, managing my property in Mumbai was always a headache until I found VK Services. Their team handled everything remotely – from documentation to tax filings. The peace of mind they've given me is priceless.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../assets/images/testimonial1.jpg" alt="Rakesh Shah">
+                        </div>
+                        <div class="author-info">
+                            <h4>Rakesh Shah</h4>
+                            <span>NRI, United States</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-content">
+                        <p>I was facing a complex property dispute with a builder that had been dragging on for years. The legal team at VK Services was incredible – they analyzed all documents, identified key issues, and resolved the matter within months. Their expertise saved me both money and stress.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../assets/images/testimonial2.jpg" alt="Priya Mehta">
+                        </div>
+                        <div class="author-info">
+                            <h4>Priya Mehta</h4>
+                            <span>Property Owner, Mumbai</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-content">
+                        <p>The tax planning services provided by VK Services saved me a significant amount on capital gains tax when selling my ancestral property. Their chartered accountants are knowledgeable and provided practical, actionable advice that made a real difference to my bottom line.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../assets/images/testimonial3.jpg" alt="Suresh Kumar">
+                        </div>
+                        <div class="author-info">
+                            <h4>Suresh Kumar</h4>
+                            <span>Property Investor, Bangalore</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-content">
+                        <p>When I needed to sell my property while living in Australia, VK Services managed the entire process - from finding a buyer to handling all legal paperwork and tax implications. Their team's professionalism and attention to detail made what could have been a complicated process remarkably smooth.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="../assets/images/testimonial4.jpg" alt="Arun Gupta">
+                        </div>
+                        <div class="author-info">
+                            <h4>Arun Gupta</h4>
+                            <span>NRI, Australia</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-cta" data-aos="fade-up">
+                <a href="#" class="cta-button">View All Testimonials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="our-partners">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Partners & Affiliations</h2>
+                <p>Collaborating with trusted institutions to deliver the highest standards of service</p>
+            </div>
+            
+            <div class="partners-slider" data-aos="fade-up">
+                <div class="partner-logo">
+                    <img src="../assets/images/partner1.png" alt="ICAI">
+                    <div class="partner-name">Institute of Chartered Accountants of India</div>
+                </div>
+                
+                <div class="partner-logo">
+                    <img src="../assets/images/partner2.png" alt="Bar Council">
+                    <div class="partner-name">Bar Council of India</div>
+                </div>
+                
+                <div class="partner-logo">
+                    <img src="../assets/images/partner3.png" alt="CREDAI">
+                    <div class="partner-name">CREDAI</div>
+                </div>
+                
+                <div class="partner-logo">
+                    <img src="../assets/images/partner4.png" alt="ICSI">
+                    <div class="partner-name">Institute of Company Secretaries of India</div>
+                </div>
+                
+                <div class="partner-logo">
+                    <img src="../assets/images/partner5.png" alt="FICCI">
+                    <div class="partner-name">Federation of Indian Chambers of Commerce & Industry</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Let's Discuss Your Property Needs</h2>
+                <p>Schedule a consultation with our team of experts and discover how we can help you navigate property legal and tax matters with ease.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="secondary-button">Book Free Consultation</a>
+                    <a href="services.html" class="cta-button">Explore Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-building logo-icon"></i>
+                        <span>VK Services</span>
+                    </a>
+                    <p>Your trusted partner for hassle-free property legal & tax solutions in India.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="services.html#tab1">Property Legal Services</a></li>
+                            <li><a href="services.html#tab2">Tax & Compliance Services</a></li>
+                            <li><a href="services.html#tab3">Property Management</a></li>
+                            <li><a href="services.html#tab4">NRI Documentation</a></li>
+                            <li><a href="services.html">Dispute Resolution</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Guides</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Tax Calculator</a></li>
+                            <li><a href="#">Property Forms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 VK Services Pvt Ltd. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/about.js"></script>
+</body>
+</html>
