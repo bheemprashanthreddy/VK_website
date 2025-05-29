@@ -3,776 +3,976 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Vakeel Properties Pvt Ltd</title>
-    <meta name="description" content="Explore the comprehensive legal and tax solutions offered by Vakeel Properties Pvt Ltd in India. We specialize in property matters.">
+    <meta name="description" content="Comprehensive property legal, tax, and business registration services by Vakil Properties. Expert legal assistance, tax optimization, property management, and business compliance solutions.">
+    <meta name="keywords" content="property legal services, tax compliance, business registration, GST registration, company incorporation, property documentation, legal assistance India">
+    <meta name="author" content="Vakil Properties">
+    
+    <title>Our Services - Property Legal & Tax Solutions | Vakil Properties</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
     
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="../assets/css/styles.css"> -->
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     
-    <!-- Web Manifest -->
-    <link rel="manifest" href="../site.webmanifest">
-
-    <style>
-        /* Vakeel Properties Pvt Ltd - About Page Responsive CSS */
-
-/* Reset and Base Styles */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-    background: #fafbfc;
-    color: #222;
-    line-height: 1.6;
-    min-height: 100vh;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-a {
-    color: #2156a5;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-a:hover,
-a:focus {
-    color: #163a6c;
-    text-decoration: underline;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */
-header {
-    background: #fff;
-    border-bottom: 1px solid #e9ecef;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.2rem 0;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    gap: 0.5rem;
-}
-
-.logo-icon {
-    font-size: 2rem;
-    color: #2156a5;
-}
-
-nav {
-    flex: 1;
-}
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-links li a {
-    font-size: 1rem;
-    color: #222;
-    padding: 0.5rem 0.8rem;
-    border-radius: 4px;
-    transition: background 0.2s, color 0.2s;
-}
-
-.nav-links li a.active,
-.nav-links li a:hover {
-    background: #2156a5;
-    color: #fff;
-}
-
-.cta-button {
-    background-color: var(--primary);
-    color: white !important;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition-normal);
-    text-decoration: none;
-    display: inline-block;
-}
-
-.cta-button:hover,
-.secondary-button:hover {
-    background: #163a6c;
-    color: white;
-}
-
-.secondary-button {
-    background: #fff;
-    color: #2156a5;
-    border: 2px solid #2156a5;
-    padding: 0.6rem 1.4rem;
-    border-radius: 4px;
-    font-weight: 600;
-    margin-right: 1rem;
-    transition: background 0.2s, color 0.2s;
-}
-
-.mobile-menu-toggle {
-    display: none;
-    font-size: 1.6rem;
-    cursor: pointer;
-    color: #2156a5;
-}
-
-.mobile-menu {
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(33, 86, 165, 0.97);
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem;
-    z-index: 999;
-    transition: opacity 0.3s;
-}
-
-.mobile-menu ul {
-    list-style: none;
-    width: 100%;
-    margin-top: 2rem;
-}
-
-.mobile-menu ul li {
-    margin-bottom: 1.2rem;
-}
-
-.mobile-menu ul li a {
-    color: #fff;
-    font-size: 1.2rem;
-    display: block;
-    padding: 0.5rem 0;
-}
-
-.mobile-menu .cta-button {
-    margin-top: 2rem;
-    background: #fff;
-    color: #2156a5;
-}
-
-.close-menu {
-    position: absolute;
-    top: 1.5rem; right: 2rem;
-    font-size: 2rem;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* Banner */
-.page-banner {
-    position: relative;
-    background: url('../assets/images/services-banner.jpg') center/cover no-repeat;
-    min-height: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.banner-overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background:#057EC0;
-    z-index: 1;
-}
-
-.banner-content {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-align: center;
-}
-
-.banner-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    letter-spacing: 1px;
-}
-
-.banner-content p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.breadcrumbs {
-    color: #e3e3e3;
-    font-size: 1rem;
-}
-
-.breadcrumbs a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-/* Section Headers */
-.section-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
-
-.section-header h2 {
-    font-size: 2rem;
-    color: #2156a5;
-    margin-bottom: 0.5rem;
-}
-
-.section-header p {
-    color: #555;
-    font-size: 1.1rem;
-}
-
-/* Services Section */
-.our-services {
-    padding: 3rem 0;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.service-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(33, 86, 165, 0.06);
-    padding: 1.5rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(33, 86, 165, 0.1);
-}
-
-.service-card h3 {
-    color: #2156a5;
-    font-size: 1.3rem;
-    margin-bottom: 0.7rem;
-}
-
-.service-card p {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* CTA Section */
-.cta-section {
-    background: linear-gradient(90deg, #2156a5 60%, #163a6c 100%);
-    color: #fff;
-    padding: 3rem 0 2rem 0;
-    text-align: center;
-}
-
-.cta-content h2 {
-    font-size: 2rem;
-    margin-bottom: 0.7rem;
-    letter-spacing: 1px;
-}
-
-.cta-content p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Footer */
-.footer {
-    background: #163a6c;
-    color: #fff;
-    padding: 2.5rem 0 1.2rem 0;
-}
-
-.footer-content {
-    display: flex;
-    gap: 2.5rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer-logo {
-    flex: 1 1 220px;
-    margin-bottom: 1.5rem;
-}
-
-.footer-logo .logo {
-    color: #fff;
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-.footer-logo p {
-    color: #dbe9fa;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.footer-social {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer-social a {
-    color: #f3c623;
-    font-size: 1.2rem;
-    transition: color 0.2s;
-}
-
-.footer-social a:hover {
-    color: #fff;
-}
-
-.footer-links {
-    display: flex;
-    gap: 2.5rem;
-    flex: 2 1 420px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.footer-links-column {
-    min-width: 140px;
-    margin-bottom: 1rem;
-}
-
-.footer-links-column h3 {
-    color: #f3c623;
-    font-size: 1.05rem;
-    margin-bottom: 0.7rem;
-}
-
-.footer-links-column ul {
-    list-style: none;
-}
-
-.footer-links-column ul li {
-    margin-bottom: 0.5rem;
-}
-
-.footer-links-column ul li a {
-    color: #dbe9fa;
-    font-size: 0.97rem;
-    transition: color 0.2s;
-}
-
-.footer-links-column ul li a:hover {
-    color: #f3c623;
-}
-
-.footer-bottom {
-    border-top: 1px solid #294e7c;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 0.97rem;
-}
-
-.footer-bottom-links {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.footer-bottom-links a {
-    color: #f3c623;
-    transition: color 0.2s;
-}
-
-.footer-bottom-links a:hover {
-    color: #fff;
-}
-
-/* Back to Top */
-.back-to-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background: #2156a5;
-    color: #fff;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-    box-shadow: 0 2px 12px rgba(33,86,165,0.12);
-    opacity: 0.85;
-    z-index: 999;
-    transition: background 0.2s, opacity 0.2s;
-}
-
-.back-to-top:hover {
-    background: #163a6c;
-    opacity: 1;
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .container {
-        width: 96%;
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Vakil Properties Services",
+        "description": "Comprehensive property legal, tax, and business registration services",
+        "provider": {
+            "@type": "LegalService",
+            "name": "Vakil Properties",
+            "url": "https://www.vkservices.com",
+            "telephone": "+91-7842779789",
+            "email": "pcsfilings@gmail.com"
+        },
+        "serviceType": ["Property Legal Services", "Tax Compliance", "Business Registration", "Property Management"],
+        "areaServed": "India"
     }
-    .header-container,
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
-    }
-    .nav-links {
-        gap: 1.2rem;
-    }
-    .footer-links {
-        gap: 1.2rem;
-    }
-}
-
-@media (max-width: 900px) {
-    .story-content,
-    .mission-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    .story-image,
-    .mission-visual {
-        max-width: 100%;
-    }
-    .footer-links {
-        justify-content: flex-start;
-    }
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 15px;
-    }
-    .nav-links {
-        display: none;
-    }
-    .mobile-menu-toggle {
-        display: block;
-    }
-    .cta-button {
-        margin-left: 1rem;
-        padding: 0.5rem 1rem;
-    }
-    .page-banner {
-        min-height: 240px;
-    }
-    .banner-content h1 {
-        font-size: 2rem;
-    }
-    .banner-content p {
-        font-size: 1.1rem;
-    }
-    .section-header h2 {
-        font-size: 1.8rem;
-    }
-    .cta-content h2 {
-        font-size: 1.8rem;
-    }
-    .footer-bottom {
-        flex-direction: column;
-        gap: 0.7rem;
-        text-align: center;
-    }
-    .mobile-menu-toggle.open + .mobile-menu {
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
-@media (max-width: 576px) {
-    html {
-        font-size: 14px;
-    }
-    .cta-buttons {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .secondary-button {
-        margin-right: 0;
-    }
-}
-    </style>
+    </script>
 </head>
 <body>
-
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Header -->
-    <header>
-        <div class="header-container container">
-            <a href="../index.html" class="logo">
-                <img src="../assets/images/logo.jpg" style="height: 30px;" alt="Vakeel Properties Logo">
-                Vakeel Properties
-            </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="contact.html" class="cta-button">Book Consultation</a>
-            <div class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
-
-    <!-- Mobile Menu (Hidden by default) -->
-    <div class="mobile-menu">
-        <i class="fas fa-times close-menu"></i>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="contact.html" class="cta-button">Book Consultation</a>
-    </div>
-
-    <!-- Page Banner -->
-    <section class="page-banner">
-        <div class="banner-overlay"></div>
-        <div class="banner-content container">
-            <h1>Our Services</h1>
-            <p>Empowering you with expert legal and tax solutions for your property needs in India.</p>
-            <div class="breadcrumbs">
-                <a href="/">Home</a> 
-                <span class="separator">/</span> 
-                Services
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="our-services">
-        <div class="container">
-            <div class="section-header">
-                <h2>What We Offer</h2>
-                <p>Explore our wide range of services designed to provide comprehensive legal and tax support for property owners in India.</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Property Legal Advice</h3>
-                    <p>Expert legal guidance on property acquisition, disputes, and compliance.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Tax Planning & Filing</h3>
-                    <p>Optimize your taxes with our tailored planning and accurate filing services.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Due Diligence</h3>
-                    <p>Thorough property verification to ensure secure and risk-free investments.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Property Registration</h3>
-                    <p>Seamless assistance with property registration and documentation.</p>
-                </div>
-                 <div class="service-card">
-                    <h3>Property Valuation</h3>
-                    <p>Accurate property appraisals for sales, investments, and legal purposes.</p>
-                </div>
-                <div class="service-card">
-                    <h3>NRI Services</h3>
-                    <p>Specialized legal and tax services for Non-Resident Indians with property in India.</p>
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav__container">
+                <!-- Logo -->
+                <div class="nav__brand">
+                    <a href="../index.html" class="nav__logo" aria-label="Vakil Properties Home">
+                        <div class="nav__logo-icon">
+                            <svg viewBox="0 0 100 100" class="nav__logo-svg">
+                                <defs>
+                                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1a365d"/>
+                                        <stop offset="100%" style="stop-color:#2d5a87"/>
+                                    </linearGradient>
+                                </defs>
+                                <!-- Shield -->
+                                <path d="M50 10 L20 25 L20 65 Q20 85 50 90 Q80 85 80 65 L80 25 Z" fill="url(#logoGradient)" stroke="none"/>
+                                <!-- Feather -->
+                                <path d="M45 25 Q35 30 35 45 Q35 60 50 75 Q65 60 65 45 Q65 30 55 25 Q50 20 45 25 Z" fill="white"/>
+                                <path d="M50 30 L50 70 M40 40 L60 40 M40 50 L60 50 M45 60 L55 60" stroke="url(#logoGradient)" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span class="nav__logo-text">Vakil Properties</span>
+                    </a>
                 </div>
                 
-
-                <div class="service-card">
-                    <h3>Business Registrations </h3>
-                    <p>Registrations for all business structures in India</p>
-                    <p>Handling all project Finances and Loans</p>
-                    <p>Handling all business Accounts, Audits and Tax Compliances</p>
+                <!-- Desktop Navigation -->
+                <ul class="nav__menu" role="menubar">
+                    <li class="nav__item" role="none">
+                        <a href="../index.html" class="nav__link" role="menuitem">Home</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="./about.html" class="nav__link" role="menuitem">About Us</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="./services.html" class="nav__link nav__link--active" role="menuitem" aria-current="page">Services</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="./contact.html" class="nav__link" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- CTA Button -->
+                <div class="nav__cta">
+                    <a href="./contact.html" class="btn btn--primary">
+                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                        Book Consultation
+                    </a>
                 </div>
-
-                <div class="service-card">
-                    <h3>Legal Compliances  </h3>
-                    <p>Legal compliances relating to Proparty disputs </p>
-                    <p>Writs, Partition suits, NCLT Cases, DRT Cases Etc…</p>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="nav__toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu Overlay -->
+            <div class="nav__overlay" id="mobile-menu" aria-hidden="true">
+                <div class="nav__mobile">
+                    <div class="nav__mobile-header">
+                        <span class="nav__mobile-title">Menu</span>
+                        <button class="nav__close" aria-label="Close mobile menu">
+                            <i class="fas fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <ul class="nav__mobile-menu" role="menu">
+                        <li class="nav__mobile-item" role="none">
+                            <a href="../index.html" class="nav__mobile-link" role="menuitem">Home</a>
+                        </li>
+                        <li class="nav__mobile-item" role="none">
+                            <a href="./about.html" class="nav__mobile-link" role="menuitem">About Us</a>
+                        </li>
+                        <li class="nav__mobile-item" role="none">
+                            <a href="./services.html" class="nav__mobile-link nav__mobile-link--active" role="menuitem">Services</a>
+                        </li>
+                        <li class="nav__mobile-item" role="none">
+                            <a href="./contact.html" class="nav__mobile-link" role="menuitem">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="nav__mobile-cta">
+                        <a href="./contact.html" class="btn btn--primary btn--full">
+                            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                            Book Free Consultation
+                        </a>
+                    </div>
                 </div>
-
-
-
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-content container">
-            <h2>Ready to Get Started?</h2>
-            <p>Contact us today to discover how Vakeel Properties Pvt Ltd can help you navigate the complexities of property law and taxation in India.</p>
-            <div class="cta-buttons">
-                <a href="/contact.html" class="cta-button">Contact Us</a>
-                <a href="#" class="secondary-button">Learn More</a>
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <!-- Animated Background Elements -->
+            <div class="page-hero__bg">
+                <div class="floating-shape floating-shape--1"></div>
+                <div class="floating-shape floating-shape--2"></div>
+                <div class="floating-shape floating-shape--3"></div>
+                <div class="floating-shape floating-shape--4"></div>
+                <div class="floating-shape floating-shape--5"></div>
             </div>
-        </div>
-    </section>
+            
+            <div class="container">
+                <div class="page-hero__content" data-aos="fade-up">
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+                        <ol class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a href="../index.html" class="breadcrumb__link">Home</a>
+                            </li>
+                            <li class="breadcrumb__item breadcrumb__item--current" aria-current="page">
+                                Services
+                            </li>
+                        </ol>
+                    </nav>
+                    
+                    <h1 class="page-hero__title">
+                        Our <span class="text-gradient">Comprehensive Services</span>
+                    </h1>
+                    <p class="page-hero__description">
+                        From property legal assistance to business registrations, we provide end-to-end solutions tailored to your specific needs with expertise and precision.
+                    </p>
+                    
+                    <div class="page-hero__stats">
+                        <div class="hero-stat" data-aos="zoom-in" data-aos-delay="200">
+                            <span class="hero-stat__number" data-count="50">0</span>
+                            <span class="hero-stat__label">Service Types</span>
+                        </div>
+                        <div class="hero-stat" data-aos="zoom-in" data-aos-delay="400">
+                            <span class="hero-stat__number" data-count="99">0</span>
+                            <span class="hero-stat__label">Success Rate %</span>
+                        </div>
+                        <div class="hero-stat" data-aos="zoom-in" data-aos-delay="600">
+                            <span class="hero-stat__number" data-count="24">0</span>
+                            <span class="hero-stat__label">Hour Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Categories -->
+        <section class="service-categories" id="service-categories">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-header__title">Service Categories</h2>
+                    <p class="section-header__description">
+                        Choose from our wide range of specialized services designed to meet all your property and business needs
+                    </p>
+                </div>
+                
+                <div class="service-nav" data-aos="fade-up" data-aos-delay="200">
+                    <button class="service-nav__btn service-nav__btn--active" data-category="all">
+                        <i class="fas fa-th-large"></i>
+                        All Services
+                    </button>
+                    <button class="service-nav__btn" data-category="legal">
+                        <i class="fas fa-gavel"></i>
+                        Legal Services
+                    </button>
+                    <button class="service-nav__btn" data-category="tax">
+                        <i class="fas fa-calculator"></i>
+                        Tax & Compliance
+                    </button>
+                    <button class="service-nav__btn" data-category="property">
+                        <i class="fas fa-home"></i>
+                        Property Management
+                    </button>
+                    <button class="service-nav__btn" data-category="registration">
+                        <i class="fas fa-building"></i>
+                        Business Registration
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Property Legal Services -->
+        <section class="service-section" id="legal" data-category="legal">
+            <div class="container">
+                <div class="service-section__header" data-aos="fade-up">
+                    <div class="service-section__icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h2 class="service-section__title">Property Legal Services</h2>
+                    <p class="service-section__description">
+                        Comprehensive legal assistance for all your property-related matters with expert guidance and documentation support.
+                    </p>
+                </div>
+                
+                <div class="service-grid">
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">Title Verification & Due Diligence</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Comprehensive property title verification, legal status checks, and complete due diligence to ensure secure transactions.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> Property Title Search</li>
+                                <li><i class="fas fa-check-circle"></i> Legal Status Verification</li>
+                                <li><i class="fas fa-check-circle"></i> Encumbrance Certificate</li>
+                                <li><i class="fas fa-check-circle"></i> Survey Settlement Records</li>
+                                <li><i class="fas fa-check-circle"></i> Court Case Verification</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">Starting from ₹15,000</span>
+                                <span class="service-card-advanced__duration">5-7 working days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">Legal Documentation & Registration</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Complete legal documentation services including sale deeds, agreements, and property registration assistance.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> Sale Deed Preparation</li>
+                                <li><i class="fas fa-check-circle"></i> Agreement Drafting</li>
+                                <li><i class="fas fa-check-circle"></i> Registration Assistance</li>
+                                <li><i class="fas fa-check-circle"></i> Stamp Duty Calculation</li>
+                                <li><i class="fas fa-check-circle"></i> Legal Compliance Check</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">Starting from ₹25,000</span>
+                                <span class="service-card-advanced__duration">3-5 working days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">Property Dispute Resolution</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Expert legal representation and mediation services for property disputes, litigation, and conflict resolution.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> Legal Consultation</li>
+                                <li><i class="fas fa-check-circle"></i> Court Representation</li>
+                                <li><i class="fas fa-check-circle"></i> Mediation Services</li>
+                                <li><i class="fas fa-check-circle"></i> Settlement Negotiation</li>
+                                <li><i class="fas fa-check-circle"></i> Documentation Support</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">Starting from ₹50,000</span>
+                                <span class="service-card-advanced__duration">Case dependent</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tax & Compliance Services -->
+        <section class="service-section service-section--alternate" id="tax" data-category="tax">
+            <div class="container">
+                <div class="service-section__header" data-aos="fade-up">
+                    <div class="service-section__icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h2 class="service-section__title">Tax & Compliance Services</h2>
+                    <p class="service-section__description">
+                        Expert tax planning, compliance, and optimization services to minimize your tax liabilities while ensuring full regulatory compliance.
+                    </p>
+                </div>
+                
+                <div class="service-grid">
+                    <div class="service-card-advanced service-card-advanced--featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card-advanced__badge">Most Popular</div>
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">Capital Gains Tax Planning</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Strategic tax planning for property transactions to minimize capital gains tax and maximize your savings legally.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> Tax Liability Assessment</li>
+                                <li><i class="fas fa-check-circle"></i> Exemption Planning</li>
+                                <li><i class="fas fa-check-circle"></i> Investment Advisory</li>
+                                <li><i class="fas fa-check-circle"></i> Documentation Support</li>
+                                <li><i class="fas fa-check-circle"></i> Filing Assistance</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">Starting from ₹10,000</span>
+                                <span class="service-card-advanced__duration">2-3 working days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-receipt"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">TDS Compliance & Filing</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Complete TDS compliance services for property transactions including calculation, deduction, and timely filing.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> TDS Calculation</li>
+                                <li><i class="fas fa-check-circle"></i> Form 26QB Filing</li>
+                                <li><i class="fas fa-check-circle"></i> TDS Certificate</li>
+                                <li><i class="fas fa-check-circle"></i> Quarterly Returns</li>
+                                <li><i class="fas fa-check-circle"></i> Penalty Avoidance</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">Starting from ₹5,000</span>
+                                <span class="service-card-advanced__duration">1-2 working days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-file-invoice"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">Income Tax Returns & Advisory</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Comprehensive income tax return filing services with expert advisory for individuals and businesses.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> ITR Preparation</li>
+                                <li><i class="fas fa-check-circle"></i> E-Filing Service</li>
+                                <li><i class="fas fa-check-circle"></i> Tax Planning Advice</li>
+                                <li><i class="fas fa-check-circle"></i> Refund Processing</li>
+                                <li><i class="fas fa-check-circle"></i> Notice Handling</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">Starting from ₹3,000</span>
+                                <span class="service-card-advanced__duration">Same day filing</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Property Management Services -->
+        <section class="service-section" id="property" data-category="property">
+            <div class="container">
+                <div class="service-section__header" data-aos="fade-up">
+                    <div class="service-section__icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h2 class="service-section__title">Property Management Services</h2>
+                    <p class="service-section__description">
+                        End-to-end property management solutions from acquisition to disposal with professional expertise and personalized attention.
+                    </p>
+                </div>
+                
+                <div class="service-grid">
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">Property Sale & Purchase Support</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Complete assistance for property buying and selling including negotiation, documentation, and transaction management.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> Market Analysis</li>
+                                <li><i class="fas fa-check-circle"></i> Negotiation Support</li>
+                                <li><i class="fas fa-check-circle"></i> Documentation</li>
+                                <li><i class="fas fa-check-circle"></i> Legal Verification</li>
+                                <li><i class="fas fa-check-circle"></i> Transaction Management</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">Starting from ₹20,000</span>
+                                <span class="service-card-advanced__duration">15-30 days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">Property Valuation & Analysis</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Professional property valuation services with detailed market analysis and investment advisory.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> Market Valuation</li>
+                                <li><i class="fas fa-check-circle"></i> Comparative Analysis</li>
+                                <li><i class="fas fa-check-circle"></i> Investment Potential</li>
+                                <li><i class="fas fa-check-circle"></i> Risk Assessment</li>
+                                <li><i class="fas fa-check-circle"></i> Detailed Reports</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">Starting from ₹8,000</span>
+                                <span class="service-card-advanced__duration">3-5 working days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-folder-open"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">Property Documentation Management</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Comprehensive documentation management services including organizing, digitizing, and maintaining property records.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> Document Organization</li>
+                                <li><i class="fas fa-check-circle"></i> Digital Archive</li>
+                                <li><i class="fas fa-check-circle"></i> Compliance Tracking</li>
+                                <li><i class="fas fa-check-circle"></i> Renewal Reminders</li>
+                                <li><i class="fas fa-check-circle"></i> Secure Storage</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">Starting from ₹12,000</span>
+                                <span class="service-card-advanced__duration">5-7 working days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Registration Services -->
+        <section class="service-section service-section--alternate" id="registration" data-category="registration">
+            <div class="container">
+                <div class="service-section__header" data-aos="fade-up">
+                    <div class="service-section__icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h2 class="service-section__title">Business Registration Services</h2>
+                    <p class="service-section__description">
+                        Complete business registration and compliance services for all types of entities with end-to-end support and expert guidance.
+                    </p>
+                </div>
+                
+                <div class="service-grid service-grid--four">
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">Company Registration</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Complete private limited company incorporation with all statutory compliances and registrations.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> Name Approval</li>
+                                <li><i class="fas fa-check-circle"></i> MOA & AOA Drafting</li>
+                                <li><i class="fas fa-check-circle"></i> DIN & DSC</li>
+                                <li><i class="fas fa-check-circle"></i> ROC Filing</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">₹12,999</span>
+                                <span class="service-card-advanced__duration">10-15 days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Register Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">LLP Registration</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Limited Liability Partnership registration with complete documentation and compliance support.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> Name Reservation</li>
+                                <li><i class="fas fa-check-circle"></i> LLP Agreement</li>
+                                <li><i class="fas fa-check-circle"></i> Partner DIN</li>
+                                <li><i class="fas fa-check-circle"></i> ROC Registration</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">₹8,999</span>
+                                <span class="service-card-advanced__duration">7-10 days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Register Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-advanced service-card-advanced--featured" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card-advanced__badge">Popular</div>
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">GST Registration</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Complete GST registration with return filing support and ongoing compliance management.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> GST Registration</li>
+                                <li><i class="fas fa-check-circle"></i> Return Filing</li>
+                                <li><i class="fas fa-check-circle"></i> Compliance Support</li>
+                                <li><i class="fas fa-check-circle"></i> Notice Handling</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">₹2,999</span>
+                                <span class="service-card-advanced__duration">3-5 days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Register Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-advanced" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-card-advanced__header">
+                            <div class="service-card-advanced__icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3 class="service-card-advanced__title">Proprietorship & Partnership</h3>
+                        </div>
+                        <div class="service-card-advanced__content">
+                            <p class="service-card-advanced__description">
+                                Sole proprietorship and partnership firm registration with all necessary licenses and permits.
+                            </p>
+                            <ul class="service-card-advanced__features">
+                                <li><i class="fas fa-check-circle"></i> Business Registration</li>
+                                <li><i class="fas fa-check-circle"></i> License Assistance</li>
+                                <li><i class="fas fa-check-circle"></i> Partnership Deed</li>
+                                <li><i class="fas fa-check-circle"></i> Bank Account Opening</li>
+                            </ul>
+                            <div class="service-card-advanced__pricing">
+                                <span class="service-card-advanced__price">₹4,999</span>
+                                <span class="service-card-advanced__duration">5-7 days</span>
+                            </div>
+                        </div>
+                        <div class="service-card-advanced__footer">
+                            <a href="./contact.html" class="btn btn--primary btn--full">
+                                <i class="fas fa-arrow-right"></i>
+                                Register Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-header__title">Our <span class="text-gradient">Service Process</span></h2>
+                    <p class="section-header__description">
+                        Simple, transparent, and efficient process designed to deliver exceptional results every time
+                    </p>
+                </div>
+                
+                <div class="process-timeline">
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="process-step__number">01</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Initial Consultation</h3>
+                            <p class="process-step__description">
+                                We understand your requirements and provide expert guidance on the best approach for your specific needs.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="process-step__number">02</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Documentation & Planning</h3>
+                            <p class="process-step__description">
+                                Comprehensive documentation review and strategic planning to ensure smooth execution of services.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="process-step__number">03</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Expert Execution</h3>
+                            <p class="process-step__description">
+                                Our expert team handles all aspects of your service requirements with precision and professionalism.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                        <div class="process-step__number">04</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Quality Assurance</h3>
+                            <p class="process-step__description">
+                                Thorough quality checks and compliance verification to ensure everything meets the highest standards.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                        <div class="process-step__number">05</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Delivery & Support</h3>
+                            <p class="process-step__description">
+                                Timely delivery of completed services with ongoing support and assistance as needed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-header__title">Frequently Asked Questions</h2>
+                    <p class="section-header__description">
+                        Find answers to common questions about our services and processes
+                    </p>
+                </div>
+                
+                <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What documents are required for property verification?</span>
+                            <i class="fas fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For property verification, we typically require the original sale deed, previous title documents, survey settlement records, encumbrance certificate, property tax receipts, and approved building plan. Our team will provide a complete checklist based on your specific property type.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How long does company registration take?</span>
+                            <i class="fas fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Company registration typically takes 10-15 working days from the date of document submission. This includes name approval, DIN and DSC procurement, MOA & AOA drafting, and final ROC filing. We provide regular updates throughout the process.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do you provide ongoing compliance support after registration?</span>
+                            <i class="fas fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we provide comprehensive ongoing compliance support including annual filings, tax return preparation, GST compliance, statutory audit assistance, and advisory services. We offer flexible packages based on your business needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What is your fee structure for tax planning services?</span>
+                            <i class="fas fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our tax planning fees are based on the complexity of your case and property value. We offer transparent pricing starting from ₹10,000 for basic capital gains planning. Detailed quotes are provided after initial consultation and case assessment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can you handle property transactions across different states?</span>
+                            <i class="fas fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we handle property transactions across India. Our team is well-versed with state-specific regulations and maintains partnerships with local experts to ensure seamless service delivery regardless of property location.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content" data-aos="zoom-in">
+                    <h2 class="cta-title">Ready to Get Started?</h2>
+                    <p class="cta-description">
+                        Choose from our comprehensive range of services and let our experts handle your property and business needs with precision and care.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="./contact.html" class="btn btn--primary btn--large">
+                            <i class="fas fa-calendar-alt"></i>
+                            Schedule Free Consultation
+                        </a>
+                        <a href="tel:+917842779789" class="btn btn--secondary btn--large">
+                            <i class="fas fa-phone"></i>
+                            Call: +91 7842779789
+                        </a>
+                    </div>
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>100% Secure</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Quick Response</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-award"></i>
+                            <span>Expert Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content container">
-            <div class="footer-logo">
-                <a href="../index.html" class="logo">
-                    <img src="../assets/images/logo.jpg" style="height: 30px;" alt="Vakeel Properties Logo">
-                    Vakeel Properties Pvt Ltd
-                </a>
-                <p>Your trusted partner for property legal & tax solutions in India. Empowering you with expert guidance.</p>
-                <div class="footer-social">
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Company Info -->
+                <div class="footer__section footer__section--main">
+                    <div class="footer__brand">
+                        <div class="footer__logo">
+                            <svg viewBox="0 0 100 100" class="footer__logo-svg">
+                                <defs>
+                                    <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffffff"/>
+                                        <stop offset="100%" style="stop-color:#e2e8f0"/>
+                                    </linearGradient>
+                                </defs>
+                                <!-- Shield -->
+                                <path d="M50 10 L20 25 L20 65 Q20 85 50 90 Q80 85 80 65 L80 25 Z" fill="url(#footerLogoGradient)" stroke="none"/>
+                                <!-- Feather -->
+                                <path d="M45 25 Q35 30 35 45 Q35 60 50 75 Q65 60 65 45 Q65 30 55 25 Q50 20 45 25 Z" fill="#1a365d"/>
+                                <path d="M50 30 L50 70 M40 40 L60 40 M40 50 L60 50 M45 60 L55 60" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span class="footer__brand-text">Vakil Properties</span>
+                    </div>
+                    <p class="footer__description">
+                        Your trusted partner for comprehensive property legal and tax solutions in India. Serving clients nationwide with expertise and integrity.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="../index.html" class="footer__link">Home</a></li>
+                        <li><a href="./about.html" class="footer__link">About Us</a></li>
+                        <li><a href="./services.html" class="footer__link">Services</a></li>
+                        <li><a href="./contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer__section">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="#legal" class="footer__link">Property Legal Services</a></li>
+                        <li><a href="#tax" class="footer__link">Tax & Compliance</a></li>
+                        <li><a href="#property" class="footer__link">Property Management</a></li>
+                        <li><a href="#registration" class="footer__link">Registration Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer__section">
+                    <h3 class="footer__title">Contact Info</h3>
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Flat No. 413 & 414, Sovereign Shelters Apartments,<br>Red hills, Lakdikapool, Hyderabad - 500004</span>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+917842779789">+91 7842779789</a>
+                        </div>
+                        <div class="footer__contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:pcsfilings@gmail.com">pcsfilings@gmail.com</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-links">
-                <div class="footer-links-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <div class="footer__bottom-content">
+                    <p class="footer__copyright">
+                        &copy; 2025 Vakil Properties. All rights reserved.
+                    </p>
+                    <div class="footer__legal">
+                        <a href="#" class="footer__legal-link">Privacy Policy</a>
+                        <a href="#" class="footer__legal-link">Terms of Service</a>
+                        <a href="#" class="footer__legal-link">Sitemap</a>
+                    </div>
                 </div>
-                <div class="footer-links-column">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#">Property Legal Advice</a></li>
-                        <li><a href="#">Tax Planning & Filing</a></li>
-                        <li><a href="#">Due Diligence</a></li>
-                        <li><a href="#">Property Registration</a></li>
-                         <li><a href="#">Property Valuation</a></li>
-                        <li><a href="#">NRI Services</a></li>
-                        <li><a href="#">Landmark Judgements</a></li>
-                        <li><a href="#">Vaastu Consultancy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links-column">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="#">+91 9876543210</a></li>
-                        <li><a href="#">info@vkservices.com</a></li>
-                        <li><a href="#">123, Business Park, Mumbai</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom container">
-            <p>&copy; © 2025 Vakeel Properties Pvt Ltd. All rights reserved.</p>
-            <div class="footer-bottom-links">
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <a href="#" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </a>
+    <button class="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
 
-    <!-- JavaScript Libraries -->
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const closeMenu = document.querySelector('.close-menu');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            mobileMenu.style.display = 'flex';
-            setTimeout(() => {
-                mobileMenu.classList.add('open');
-            }, 10);
-        });
-
-        closeMenu.addEventListener('click', () => {
-            mobileMenu.classList.remove('open');
-            setTimeout(() => {
-                mobileMenu.style.display = 'none';
-            }, 300);
-        });
-
-        // Back to Top button functionality
-        const backToTopButton = document.querySelector('.back-to-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = 'flex';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        });
-
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/services.js"></script>
 </body>
 </html>
