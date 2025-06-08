@@ -491,6 +491,7 @@
                 .service-search {
                     max-width: 400px;
                     margin: 0 auto var(--space-8);
+                    margin-top:1rem
                 }
                 .service-search__container {
                     position: relative;

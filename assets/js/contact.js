@@ -1405,56 +1405,78 @@
             }
         }
 
-        showMap() {
-            if (this.mapPlaceholder) {
-                this.mapPlaceholder.style.display = 'none';
-            }
+        // showMap() {
+        //     if (this.mapPlaceholder) {
+        //         this.mapPlaceholder.style.display = 'none';
+        //     }
             
-            if (this.mapContainer) {
-                this.mapContainer.style.display = 'block';
-                this.mapContainer.innerHTML = `
-                    <div style="
-                        width: 100%;
-                        height: 100%;
-                        background: linear-gradient(135deg, #1a365d, #4299e1);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: white;
-                        text-align: center;
-                        padding: 2rem;
-                    ">
-                        <div>
-                            <i class="fas fa-map-marker-alt" style="font-size: 3rem; margin-bottom: 1rem; color: #f6ad55;"></i>
-                            <h3>Vakil Properties Office</h3>
-                            <p>Lakdikapool, Hyderabad</p>
-                            <p style="font-size: 0.875rem; opacity: 0.8; margin-top: 1rem;">
-                                Interactive map would be loaded here<br>
-                                with actual Google Maps integration
-                            </p>
-                            <a href="https://maps.google.com/directions" target="_blank" rel="noopener" 
-                               style="
-                                 display: inline-flex;
-                                 align-items: center;
-                                 gap: 0.5rem;
-                                 margin-top: 1rem;
-                                 padding: 0.5rem 1rem;
-                                 background: rgba(255,255,255,0.2);
-                                 color: white;
-                                 text-decoration: none;
-                                 border-radius: 0.5rem;
-                                 transition: all 0.3s;
-                               "
-                               onmouseover="this.style.background='rgba(255,255,255,0.3)'"
-                               onmouseout="this.style.background='rgba(255,255,255,0.2)'">
-                                <i class="fas fa-directions"></i>
-                                Get Directions
-                            </a>
-                        </div>
-                    </div>
-                `;
-            }
-        }
+        //     if (this.mapContainer) {
+        //         this.mapContainer.style.display = 'block';
+        //         this.mapContainer.innerHTML = `
+        //             <div style="
+        //                 width: 100%;
+        //                 height: 100%;
+        //                 background: linear-gradient(135deg, #1a365d, #4299e1);
+        //                 display: flex;
+        //                 align-items: center;
+        //                 justify-content: center;
+        //                 color: white;
+        //                 text-align: center;
+        //                 padding: 2rem;
+        //             ">
+        //                 <div>
+        //                     <i class="fas fa-map-marker-alt" style="font-size: 3rem; margin-bottom: 1rem; color: #f6ad55;"></i>
+        //                     <h3>Vakil Properties Office</h3>
+        //                     <p>Lakdikapool, Hyderabad</p>
+        //                     <p style="font-size: 0.875rem; opacity: 0.8; margin-top: 1rem;">
+        //                         Interactive map would be loaded here<br>
+        //                         with actual Google Maps integration
+        //                     </p>
+        //                     <a href="https://maps.google.com/directions" target="_blank" rel="noopener" 
+        //                        style="
+        //                          display: inline-flex;
+        //                          align-items: center;
+        //                          gap: 0.5rem;
+        //                          margin-top: 1rem;
+        //                          padding: 0.5rem 1rem;
+        //                          background: rgba(255,255,255,0.2);
+        //                          color: white;
+        //                          text-decoration: none;
+        //                          border-radius: 0.5rem;
+        //                          transition: all 0.3s;
+        //                        "
+        //                        onmouseover="this.style.background='rgba(255,255,255,0.3)'"
+        //                        onmouseout="this.style.background='rgba(255,255,255,0.2)'">
+        //                         <i class="fas fa-directions"></i>
+        //                         Get Directions
+        //                     </a>
+        //                 </div>
+        //             </div>
+        //         `;
+        //     }
+        // }
+        showMap() {
+    if (this.mapPlaceholder) {
+        this.mapPlaceholder.style.display = 'none';
+    }
+    if (this.mapContainer) {
+        this.mapContainer.style.display = 'block';
+        // Use your actual office address or coordinates here
+        const mapSrc = "https://www.google.com/maps?q=Flat+No.+413+%26+414,+Sovereign+Shelters+Apartments,+Red+hills,+Lakdikapool,+Hyderabad,+Telangana+500004&output=embed";
+        this.mapContainer.innerHTML = `
+            <iframe
+                width="100%"
+                height="400"
+                frameborder="0"
+                style="border:0"
+                src="${mapSrc}"
+                allowfullscreen
+                aria-hidden="false"
+                tabindex="0">
+            </iframe>
+        `;
+    }
+}
     }
 
     // ==========================================================================
